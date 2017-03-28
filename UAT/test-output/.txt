@@ -1,0 +1,24 @@
+ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/mnt/e/projects/aliyun/client-repo/ostsdocs/UAT/test-script/playbooks/ecs/instance/ecs_create_instance/CreateInstanceAndAssignEipToIt.yml': line 19, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - block:
+    - name: Validating Bind Eip parameter
+      ^ here
+
+
+The error appears to have been in '/mnt/e/projects/aliyun/client-repo/ostsdocs/UAT/test-script/playbooks/ecs/instance/ecs_create_instance/CreateInstanceAndAssignEipToIt.yml': line 19, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - block:
+    - name: Validating Bind Eip parameter
+      ^ here
+
+PLAY [Bind Eip to an VPC instance] *********************************************
+
+TASK [setup] *******************************************************************

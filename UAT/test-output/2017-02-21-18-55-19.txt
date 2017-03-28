@@ -1,0 +1,6 @@
+
+[1m[INFO] Running module test-script/playbooks/ecs/disks/ecs_delete_disk...[0m
+
+
+[1m[INFO] Running playbook test-script/playbooks/ecs/disks/ecs_delete_disk/DeleteDiskWhenDiskIsInUseState.yml...[0m
+

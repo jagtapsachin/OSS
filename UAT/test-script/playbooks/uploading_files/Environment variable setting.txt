@@ -1,0 +1,9 @@
+
+export ACS_ACCESS_KEY=N8cvD83K81USpn3u
+export ACS_SECRET_KEY=fqbuZIKPxOdu36yhFvaBtihNqD2qQ2
+export ACS_DEFAULT_REGION=cn-beijing
+
+
+printenv
+
+

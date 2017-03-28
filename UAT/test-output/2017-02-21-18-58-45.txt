@@ -1,0 +1,112 @@
+
+[1m[INFO] Running module test-script/playbooks/ecs/images/ecs_create_custom_image...[0m
+
+
+[1m[INFO] Running playbook test-script/playbooks/ecs/images/ecs_create_custom_image/CreateUserDefinedImageWhenSnapshotIsPresentInAnotherRegion.yml...[0m
+
+
+PLAY [Create user defined image with snapshot parameter where sanapshot is present in another region] ***
+
+TASK [setup] *******************************************************************
+ok: [localhost]
+
+TASK [Create user defined image with snapshot parameter where sanapshot is present in another region] ***
+fatal: [localhost]: FAILED! => {"RequestId": "", "changed": false, "failed": true, "image_id": "", "msg": [{"Error Code": "Invalid.SnapshotId", "Error Message": "The snapshot id not found"}]}
+
+TASK [fail] ********************************************************************
+skipping: [localhost]
+
+TASK [assert] ******************************************************************
+ok: [localhost] => {
+    "changed": false, 
+    "msg": "All assertions passed"
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=2    changed=0    unreachable=0    failed=1   
+
+
+[1m[INFO] Running playbook test-script/playbooks/ecs/images/ecs_create_custom_image/CreateUserDefinedImageWhenTheSnapshotIsNotCompleted.yml...[0m
+
+
+PLAY [Create user defined image with snapshot id where snapshot is not 100% completed] ***
+
+TASK [setup] *******************************************************************
+ok: [localhost]
+
+TASK [Create user defined image with snapshot id where snapshot is not 100% completed] ***
+fatal: [localhost]: FAILED! => {"RequestId": "", "changed": false, "failed": true, "image_id": "", "msg": [{"Error Code": "Invalid.SnapshotId", "Error Message": "The snapshot id not found"}]}
+
+TASK [fail] ********************************************************************
+skipping: [localhost]
+
+TASK [assert] ******************************************************************
+ok: [localhost] => {
+    "changed": false, 
+    "msg": "All assertions passed"
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=2    changed=0    unreachable=0    failed=1   
+
+
+[1m[INFO] Running playbook test-script/playbooks/ecs/images/ecs_create_custom_image/CreateUserDefinedImageWithAllTheAlias.yml...[0m
+
+
+PLAY [Create user defined image with all the alias] ****************************
+
+TASK [setup] *******************************************************************
+ok: [localhost]
+
+TASK [Create user defined image with all the alias] ****************************
+fatal: [localhost]: FAILED! => {"RequestId": "", "changed": false, "failed": true, "image_id": "", "msg": [{"Error Code": "Invalid.SnapshotId", "Error Message": "The snapshot id not found"}]}
+
+TASK [fail] ********************************************************************
+skipping: [localhost]
+
+TASK [assert] ******************************************************************
+fatal: [localhost]: FAILED! => {
+    "assertion": "result.changed ==  True", 
+    "changed": false, 
+    "evaluated_to": false, 
+    "failed": true, 
+    "msg": "Test pass FAILED!!! New custom image is not created successfully. REASON: {u'msg': [{u'Error Message': u'The snapshot id not found', u'Error Code': u'Invalid.SnapshotId'}], u'image_id': u'', u'changed': False, u'RequestId': u'', u'failed': True}"
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=1    changed=0    unreachable=0    failed=2   
+
+
+[1m[INFO] Running playbook test-script/playbooks/ecs/images/ecs_create_custom_image/CreateUserDefinedImageWithDatadisk.yml...[0m
+
+
+PLAY [Create an instance with snapshot of data disk] ***************************
+
+TASK [setup] *******************************************************************
+ok: [localhost]
+
+TASK [Create an instance with snapshot of data disk] ***************************
+fatal: [localhost]: FAILED! => {"RequestId": "", "changed": false, "failed": true, "image_id": "", "msg": [{"Error Code": "Invalid.SnapshotId", "Error Message": "The snapshot id not found"}]}
+
+TASK [fail] ********************************************************************
+skipping: [localhost]
+
+TASK [assert] ******************************************************************
+fatal: [localhost]: FAILED! => {
+    "assertion": "'The specified snapshot is not from system disk.' in result.msg[0]['Error Message']", 
+    "changed": false, 
+    "evaluated_to": false, 
+    "failed": true, 
+    "msg": "Test pass FAILED!!! Failure Expected - We can not create an image with the snapshot of data disk. REASON: {u'msg': [{u'Error Message': u'The snapshot id not found', u'Error Code': u'Invalid.SnapshotId'}], u'image_id': u'', u'changed': False, u'RequestId': u'', u'failed': True}"
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=1    changed=0    unreachable=0    failed=2   
+
+
+[1m[INFO] Running playbook test-script/playbooks/ecs/images/ecs_create_custom_image/CreateUserDefinedImageWithDiskMappingParameter.yml...[0m
+
+
+PLAY [Create user defined image with disk mapping parameter] *******************
+
+TASK [setup] *******************************************************************

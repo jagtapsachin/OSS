@@ -1,0 +1,8 @@
+---
+# This file contains Aliyun Credentials 
+
+aliyun_acs_access_key: LTAIzdIZ4QfZ4exJ
+aliyun_acs_secret_access_key: M3kLkozwvVx7Z8BwYfvYM0kC1703kP
+
+invalid_acs_access_key: XXXXXXXXX
+invalid_acs_secret_access_key: XXXXXXXXX

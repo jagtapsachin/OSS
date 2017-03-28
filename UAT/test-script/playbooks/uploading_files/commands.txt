@@ -1,0 +1,14 @@
+Create Vpc
+aliyuncli  ecs CreateVpc --RegionId cn-hongkong
+
+Create VSwitch
+aliyuncli ecs CreateVSwitch --VpcId  vpc-j6c3a5uz08h3mxr2p432i --CidrBlock 172.16.1.0/24 --ZoneId cn-hongkong-b
+
+Create Instance 
+aliyuncli ecs CreateInstance --RegionId cn-hongkong --ImageId ubuntu1404_64_40G_cloudinit_20160727.raw --InstanceType ecs.t1.small --VSwitchId  vsw-j6ciudef5hi7rd13mtrch
+
+
+
+ 2786FE1F-07C5-4589-9783-0F9EE02FD4F8 |  
+vpc-j6c3a5uz08h3mxr2p432i
+vsw-j6co2uknrmopj4ypgdnq4

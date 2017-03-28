@@ -1,0 +1,52 @@
+########## Permission #########
+permission: public-read-write
+permissionsAll:
+    - private
+    - public-read
+    - public-read-write
+
+######### Expiration ##########
+expiration: 52
+expirationNumeral: expiration
+expirationNegative: -25
+expirationSpecialChar: $#() 
+
+#### Bucket Name ####
+bucketNameWithUpperCase: demo-UAT-Bucket
+bucketNameWithSplChars: _^^trdfggf$
+bucketNameWithLessThan3Chars: ab
+bucketNameWithMoreThan63Chars: bucketbucketbucketbucketbucketbucketbucketbucketbucketbucketbucket
+bucketNameWithExact63Chars: bucketbucketbucketbucketbucketbucketbucketbucketbucketbucketbuc
+bucketNameWithExact3Chars: big
+invalidBucket: Demo_Bucket
+
+##### 3. Permission ####
+permissionInvalid: public
+
+### 4. Region ###
+invalidregion: cn-china
+
+######### Mode ########
+modeCreate: create
+modeDelete: delete
+modeUpload: put
+modeDeleteObject: delobj
+modeBucketList: list
+modePutFolder: put_folder
+modePutFolderInvalid: public
+invalidMode: sghh54@^
+folderName: demo-folder
+
+#### 3. Folder Name #####
+invalidFolderName: Folder%%$$
+folderNameHaving1Char: a
+folderNameHaving256Char: Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Fold
+folderNameHavingMoreThan256Char: Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.Folder_Name.
+
+
+
+
+
+
+
+

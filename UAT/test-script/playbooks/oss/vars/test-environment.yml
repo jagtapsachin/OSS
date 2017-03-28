@@ -1,0 +1,12 @@
+ ############ Create bucket ###############
+
+bucketName: c2c-uat-bucket
+region: cn-hongkong   
+
+############ Delete Bucket #########
+bucketNameInUse:  bucket-name1
+regionDiff: cn-beijing   
+
+######### Delete Bucket / List #######
+bucketForList: bucketname-11      # Change while running automation script
+deleteBucket: bucketname-11       # Change while running automation script
